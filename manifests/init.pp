@@ -6,13 +6,15 @@
 # @param prometheus_server_ip sets the IP range to allow for prometheus connections
 # @param port to serve the metrics on
 # @param interval sets how frequently to poll in seconds
+# @param ignore sets account IDs to ignore
 class simplefin (
   String $access_url,
-  String $version = 'v0.0.1',
+  String $version = 'v0.0.4',
   String $binfile = '/usr/local/bin/simplefin-exporter',
   String $prometheus_server_ip = '0.0.0.0/0',
   Integer $port = 9093,
   Integer $interval = 3600,
+  Array[String] $ignore = [],
 ) {
   $kernel = downcase($facts['kernel'])
   $arch = $facts['os']['architecture'] ? {
