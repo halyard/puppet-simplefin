@@ -1,0 +1,9 @@
+[Unit]
+Description=Expose simplefin data as metrics
+
+[Service]
+ExecStart=/usr/local/bin/simplefin-exporter serve /usr/local/etc/simplefin-exporter.yaml
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

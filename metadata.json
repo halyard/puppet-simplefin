@@ -1,0 +1,16 @@
+{
+  "name": "halyard-simplefin",
+  "version": "0.0.1",
+  "author": "Les Aker",
+  "license": "MIT",
+  "summary": "Configure simplefin metrics",
+  "source": "https://github.com/halyard/puppet-simplefin",
+  "project_page": "https://github.com/halyard/puppet-simplefin",
+  "issues_url": "https://github.com/halyard/puppet-simplefin/issues",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+
+  ]
+}
