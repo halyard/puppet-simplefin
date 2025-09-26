@@ -13,7 +13,7 @@ class simplefin (
   String $binfile = '/usr/local/bin/simplefin-exporter',
   String $prometheus_server_ip = '0.0.0.0/0',
   Integer $port = 9093,
-  Integer $interval = 3600,
+  Integer $interval = 21600,
   Array[String] $ignore = [],
 ) {
   $kernel = downcase($facts['kernel'])
