@@ -4,6 +4,7 @@ Description=Expose simplefin data as metrics
 [Service]
 ExecStart=/usr/local/bin/simplefin-exporter serve /usr/local/etc/simplefin-exporter.yaml
 Restart=always
+RestartSec=3600s
 
 [Install]
 WantedBy=multi-user.target
